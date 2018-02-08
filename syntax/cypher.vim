@@ -28,6 +28,7 @@ syn keyword   cypherKeyword       case when then else end
 syn keyword   cypherKeyword       schema constraint drop assert using
 
 syn region    cypherProperty      start=+'+ skip=+\\\\\|\\'+ end=+'+
+syn region    cypherProperty      start=+"+ skip=+\\\\\|\\"+ end=+"+
 syn match     cypherRelationship  ":\w*_\w*"
 syn match     cypherSymbol        "->"
 syn match     cypherSymbol        "<=>"
